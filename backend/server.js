@@ -26,6 +26,7 @@ app.post("/create-order", async (req, res) => {
     amount: amount * 100, // INR → paise
     currency: "INR",
     receipt: "receipt_" + Date.now(),
+    payment_capture: 1
   };
 
   try {
